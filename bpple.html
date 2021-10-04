@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>Apple</title>
+    <link rel="icon" href="./apple-favicon.png">
+    <style>
+      html,body{
+            margin: 0 auto;
+            padding: 0px;
+            width:100%;
+            font-size: 12px;
+      }
+      a{
+        text-decoration :none;
+        color: #000000;
+      }
+      ul{
+        list-style: none;
+        padding: 0;
+      }
+      .blind{
+        position:absolute !important;
+        width:1px;
+        height:1px;
+        overflow:hidden;
+        clip:rect(1px, 1px, 1px, 1px);
+      }
+      nav{
+        position: fixed;
+        background: rgba(0,0,0,0.8);
+        height:44px;
+        top:0;
+        left:0;
+        right:0;
+        min-width: 320px;
+      }
+      .nav-content{
+        margin: 0 auto;
+        max-width:980px;
+        padding: 0 222px;
+        position:relative;
+      }
+      .nav-list{
+        display:flex;
+        margin: 0 -10px;
+        height:44px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .nav-item{
+        height: 44px;
+      }
+      .nav-click{
+        color:#f5f5f7;
+        display: block;
+        height: 100%;
+        text-align: center;
+        line-height: 44px;
+        padding: 0 10px;
+      }
+      .logo{
+        background-size: 16px 44px;
+        background-repeat: no-repeat;
+        background-image: url(./apple-logo-white.svg);
+        background-position: center center;
+        width: 16px;
+      }
+      .search{
+        background-size: 18px 88px;
+        background-repeat: no-repeat;
+        background-position: 10px 0;
+        background-image: url(./search-icon.svg);
+        width: 18px;
+      }
+      .bag{
+        background-size: 17px 44px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-image: url(./bag-icon.svg);
+        width: 17px;
+      }
+      main{
+        min-height:1000px;
+      }
+      .blank{
+        height:44px;
+      }
+      .top-shop{
+        background-color: #f5f5f7;
+        height:44px;
+        text-align: center;
+      }
+      .top-text{
+        max-width:620px;
+        font-size:14px;
+        margin:0 auto;
+        line-height: 44px;
+      }
+      .blue{
+        color:#06c;
+      }
+      .big-banner{
+        width: 100%;
+        height: 624px;
+        margin-bottom: 12px;
+      }
+      .iphone-12{
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url(./iphone12.jpg);
+      }
+      .iphone-12-pro{
+        background-size: 3010px 624px;
+        background-repeat: no-repeat;
+        background-image: url(./iphone-12-pro.jpg);
+      }
+      .ipad-pro{
+        background-size: 3010px 624px;
+        background-repeat: no-repeat;
+        background-image: url(./ipad-pro.jpg);
+      }
+      footer{
+        background-color: #f5f5f7;
+      }
+      .footer-inner{
+        margin: 0 auto;
+        max-width: 980px;
+        padding: 0 22px;
+        display:flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+      }
+      .footer-item+.footer-item{
+        border-top: 1px solid #d2d2d7;
+      }
+      .notes{
+        padding:17px 0 11px;
+        font-size: 12px;
+      }
+      .foot-flex-con{
+        display:flex;
+        padding-top: 20px;
+        padding-bottom: 17px;
+      }
+      .foot-flex-item{
+        flex-basis: 20%;
+      }
+      .foot-flex-item h3{
+        margin-top: 0;
+      }
+      .foot-li-title{
+        margin-right:20px;
+        margin-bottom: 0.8em;
+        font-size: inherit;
+      }
+      /* .special{
+        padding-top: 24px;
+      } */
+      .foot-column + .foot-column{
+        padding-top: 24px;
+        display:inline-block;
+        margin:0;
+      }
+      .foot-li{
+        margin:0;
+      }
+      .foot-li a:link {
+        color: #515154;
+        text-decoration: none;
+      }
+      .foot-li a:hover {
+        color: #515154;
+        text-decoration: underline;
+      }
+      .foot-li-item{
+        margin-right: 20px;
+        margin-bottom: 0.8em;
+      }
+      .foot-li-item:last-child{
+        margin-bottom: 0;
+      }
+      #footer-info{
+        color: #86868b;
+        padding: 34px 0 8px;
+        border-top: none;
+      }
+      #footer-info a{
+        color:#06c;
+      }
+      #footer-info a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-content">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-click logo" href="https://www.apple.com/kr/"><span class=blind>Apple</span></a>
+          </li>
+          <li class="nav-item store">
+            <a class="nav-click" href="https://www.apple.com/kr/shop/goto/store">스토어</a>
+          </li>
+          <li class="nav-item store">
+            <a class="nav-click" href="https://www.apple.com/kr/mac/">Mac</a>
+          </li>
+          <li class="nav-item store">
+            <a class="nav-click" href="https://www.apple.com/kr/ipad/">iPad</a>
+          </li>
+          <li class="nav-item store">
+            <a class="nav-click" href="https://www.apple.com/kr/iphone">iPhone</a>
+          </li>
+          <li class="nav-item store">
+            <a class="nav-click" href="https://www.apple.com/kr/watch">Watch</a>
+          </li>
+          <li class="nav-item store">
+            <a class="nav-click" href="https://www.apple.com/kr/music">Music</a>
+          </li>
+          <li class="nav-item store">
+            <a class="nav-click" href="https://support.apple.com/ko-kr">고객지원</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-click search" href="https://www.apple.com/kr/search"><span class=blind>검색</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-click bag" href="https://www.apple.com/kr/shop/goto/bag"><span class=blind>쇼핑백</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <section class="banner-wrap">
+        <div class="banner">
+          <div class="blank"></div>
+          <div class="top-shop">
+            <span class="top-text">
+              <a class="blue" href="abc">온라인으로 쇼핑</a>하고 무료 배송, 스페셜리스트 지원 등의 혜택을 받으세요.
+            </span>
+          </div>
+          <div class="big-banner iphone-12"></div>
+          <div class="big-banner iphone-12-pro"></div>
+          <div class="big-banner ipad-pro"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-item notes">
+          <p>* 보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다. 보상 판매 금액은 보상 판매되는 스마트폰의 상태 및 모델에 따라 달라집니다. 19세 이상이어야 합니다. 일부 매장에서는 본 프로그램을 이용할 수 없으며, 일부 기기는 보상 판매 대상이 아닙니다. Apple은 어떤 기기든 수령을 거부하거나, 그 수량을 제한할 권리를 보유합니다. 새 Apple 기기 구매 시, 현재 소유한 기기의 가치만큼 할인을 받을 수도 있습니다. 추가 약관은 apple.com/kr/trade-in을 참고하십시오.</p><p>1. 신규 가입자에게만 적용됩니다. 멤버십은 체험 기간이 끝나면 월 6,500원에 자동으로 갱신됩니다. 약관이 적용됩니다.</p>
+        </div>
+        <div class="footer-item foot-flex-con">
+          <div class="foot-flex-item">
+            <h3 class="foot-li-title">쇼핑 및 알아보기</h3>
+            <ul class="foot-li">
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">Mac</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">iPad</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">iPhone</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">Watch</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">Music</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">AirPods</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">iPod touch</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">AirTag</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">액세서리</a></li>
+            </ul>
+          </div>
+          <div class="foot-flex-item">
+            <div class="foot-column">
+              <h3 class="foot-li-title">서비스</h3>
+              <ul class="foot-li">
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple Music</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple Arcade</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">iCloud</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple Books</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple Podcast</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">App Store</a></li>
+              </ul>
+            </div>
+            <div class="foot-column">
+              <h3 class="foot-li-title special">계정</h3>
+              <ul class="foot-li">
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple ID 관리</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple Store 계정</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">iCloud.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="foot-flex-item">
+            <h3 class="foot-li-title">Apple Store</h3>
+            <ul class="foot-li">
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">매장 찾기</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">온라인에서 쇼핑하기</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">Genius Bar</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">Today at Apple</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple 캠프</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple Store 앱</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">리퍼 및 특가 제품</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">금융 혜택</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple Trade In</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">주문 상태</a></li>
+              <li class="foot-li-item"><a class="foot-li-click" href="abc">쇼핑 도움</a></li>
+
+            </ul>
+          </div>
+          <div class="foot-flex-item">
+            <div class="foot-column">
+              <h3 class="foot-li-title">비즈니스</h3>
+              <ul class="foot-li">
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple과 비즈니스</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">비즈니스를 위한 제품 쇼핑하기</a></li>
+              </ul>
+            </div>
+            <div class="foot-column">
+              <h3 class="foot-li-title special">교육</h3>
+              <ul class="foot-li">
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple과 교육</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">초중고용 제품 쇼핑하기</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">대학 생활을 위한 제품 쇼핑하기</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="foot-flex-item">
+            <div class="foot-column">
+              <h3 class="foot-li-title">Apple의 가치관</h3>
+              <ul class="foot-li">
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">손쉬운 사용</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">환경</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">개인정보 보호</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">협력업체에 대한 책임</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple Podcast</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">App Store</a></li>
+              </ul>
+            </div>
+            <div class="foot-column">
+              <h3 class="foot-li-title special">Apple 정보</h3>
+              <ul class="foot-li">
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Newsroom</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple 리더십</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">채용 안내</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">윤리 및 규정 준수</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">이벤트</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">일자리 창출</a></li>
+                <li class="foot-li-item"><a class="foot-li-click" href="abc">Apple 연락처</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-item" id="footer-info">
+          다양한 쇼핑 방법: <a href="https://www.apple.com/kr/retail/">Apple Store를 방문</a>하거나, <a href="https://locate.apple.com/kr/ko/">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.
+        </div>
+        <div class="footer-item">
+          Copyright © 2021 Apple Inc. 모든 권리 보유.
+        </div>
+      </div>
+    </footer>
+  </body>
